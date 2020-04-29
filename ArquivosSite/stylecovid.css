@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(250, 215, 215, 0.363);
+}
+*{
+    font-size: 19pt;
+}
+.icon{
+    font-size:14pt;
+    color: brown;
+}
+p{
+    font-size:10pt;
+}
+#git{
+    font-size:10pt;
+}
+#selec{
+    font-size: 10pt;

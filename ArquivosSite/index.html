@@ -6,14 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-        <style>
-            body{
-                background-color: rgba(250, 215, 215, 0.363);
-            }
-            *{
-                font-size: 19pt;
-            }
-        </style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylecovid.css">
         <link rel="shortcut icon" href="iconsvirus.ico" type="image/x-icon" />
     </head>
     <body>
@@ -24,7 +19,7 @@
                 </div>
                 <div class="col-xl">
                     <h5>Dados atuais do COVID-19</h5>
-                    <a style="font-size: 10pt;">Selecione e clique em buscar:</a>
+                    <a id="selec">Selecione e clique em buscar:</a>
                     <select name="pais" id="teste" class="custom-select-sm">
                         <option value="World" selected>Mundo</option>
                         <option value="brazil">Brasil</option>
@@ -42,29 +37,27 @@
                         <option value="australia">Australia</option> 
                         <option value="ecuador">Equador</option>              
                     </select>
-                    <input type="button" id="botao" class="btn btn-danger" value="Buscar"><br><br><br>
+                    <input type="button" id="botao" class="btn btn-danger" value="Buscar"><br><br>
+                    
         
-        
-                    Testes realizados: <a id="testfeito"></a><br>
-                    Casos: <a id="casos"></a> <br>
-                    Casos novos: <a id="casosnovos"></a> <br>
-                    Casos ativos: <a id="ativos"></a> <br>
-                    Recuperados: <a id="recu"></a><br>
-                    Casos por milhão: <a id="cspmil"></a> <br>
-                    Casos críticos: <a id="casecrit"></a><br>
-                    Mortes hoje: <a id="mortehoje"></a><br>
-                    Mortes: <a id="mortes"></a> <br>
+                    <a name="hide1">Testes realizados: </a><a name="hide2" id="testfeito"></a><br>
+                    <a name="hide1">Casos: </a> <a name="hide2" id="casos"></a> <br>
+                    <a name="hide1">Casos novos: </a><a name="hide2" id="casosnovos"></a> <br>
+                    <a name="hide1"> Casos ativos: </a><a name="hide2" id="ativos"></a> <br>
+                    <a name="hide1">Recuperados: </a><a name="hide2" id="recu"></a><br>
+                    <a name="hide1">Casos por milhão: </a><a name="hide2" id="cspmil"></a> <br>
+                    <a name="hide1">Casos críticos: </a><a name="hide2" id="casecrit"></a><br>
+                    <a name="hide1">Mortes hoje: </a><a name="hide2" id="mortehoje"></a><br>
+                    <a name="hide1" >Mortes: </a><a name="hide2" id="mortes"></a> <br>
                     <br>
-                    <p style="font-size:10pt">Site criado por Rafael. <br> API:<a style="font-size:15pt" href="https://github.com/javieraviles/covidAPI">github.com/javieraviles/covidAPI</a> </p>
+                    <p> <i class="fas fa-crow icon  "></i> </i> Site criado por Rafael. - <a id="git" href="https://github.com/rafaelsantoscosta">github.com/rafaelsantoscosta</a>
+                    <br> API:<a style="font-size:15pt" href="https://github.com/javieraviles/covidAPI">github.com/javieraviles/covidAPI</a> </p>
                 </div>
                 <div class="col-sm">
-                  
+
                 </div>
               </div>
         </div>
-
-
-
         <script src="covid.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
